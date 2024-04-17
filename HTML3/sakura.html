@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div>   
+        <div class="logo">
+            <img src="/images/anime.png" width="200"/>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Pesquisar..." />
+                <button type="submit">Buscar</button>
+            </form>
+            <script>
+                document.getElementById("search-form").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    let query = document.getElementById("search-input").value.toLowerCase().trim();
+                    if (query) {
+                        window.location.href = `sakura.html#${query}`;
+                    }
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2>Animepédia</h2>
+            <ul>
+                <li><a href="animepedia.html">Início</a></li>
+            </ul>
+            <h2>Anime</h2>
+            <ul>
+                <li><a href="naruto.html">Naruto</a></li>
+            </ul>
+            <h2>Autor</h2>
+            <ul>
+                <li><a href="kishimoto.html">Masaki Kishimoto</a></li>
+            </ul>
+            <h2>Personagens</h2>
+            <ul>
+                <li><a href="sasuke.html">Sasuke Uchiha</a></li>
+                <li><a href="kakashi.html">Kakashi</a></li>
+                <li><a href="uzumaki.html">Naruto Uzumaki</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <img src="/images/sakura.jpg" class=imagem alt="imagem da sakura cabelo rosa olhos verdes">
+            <blockquote>
+                <p>"Eu finalmente entendi... Eu não posso correr, eu tenho que enfrentar as coisas de frente... Sempre!"</p>
+                <footer>Sakura Haruno</footer>
+            </blockquote>
+            <h2><a name="sobre"></a>Sobre</h2>
+            <p>Sakura Uchiha (うちはサクラ, Uchiha Sakura) (batizada Haruno (春野) inicialmente) é uma kunoichi de nível jounin do clã Uchiha, por se casar com Sasuke Uchiha, de Konohagakure. Ela é designada como um membro do Time Kakashi, mas rapidamente encontra-se mal preparada para os deveres de um ninja e as complicações das vidas de seus companheiros de equipe. Treinando sob a tutela de sua mestra, Tsunade, ela se torna uma kunoichi mais forte e uma excelente ninja médica, sendo capaz de enfrentar os desafios de uma vida como um ninja, bem como ajudar e proteger seus amigos e entes queridos quando eles precisarem dela. Anos após a Quarta Guerra Shinobi, ela forma sua própria família com Sasuke Uchiha.</p>
+            <h2><a name="personalidade"></a>Personalidade</h2>
+            <p>Quando criança, Sakura era insegura e altamente auto-consciente sobre sua testa grande; cobrindo-a com sua franja. Isso aconteceu até o momento em que ela conheceu Ino, a quem a defendeu dos valentões e se tornaram amigas, fazendo ela se tornar mais auto-confiante. No entanto, apesar de Sakura ser considerada uma estudante exemplar por sua inteligência escolástica na Academia, ela se tornou narcisista, como ela se interessava mais com sua aparência e Sasuke ao invés de praticar suas habilidades ninja. Por causa disso, ela passou a ver os avanços de Naruto Uzumaki em tentar ganhar a sua atenção como cansativas, chamando-o de infantil e tolo, citando a falta de uma família como sendo a razão pela qual ele era considerado um incômodo para todos na aldeia, não percebendo que Naruto tinha sentimentos por ela também. Sasuke apontou que isso é porque Sakura nunca experimentou a perda em sua vida e, portanto, não poderia entender a si mesmo ou Naruto, Sakura então passou a olhar as coisas do ponto de vista de Naruto em um esforço para entender seus companheiros de equipe. Ao longo do tempo, Sakura desenvolveu uma amizade mútua com seus companheiros de equipe ao longo da série.</p>
+            <h2><a name="aparencia"></a>Aparência</h2>
+            <p>Sakura tem cabelo rosa brilhante, grandes olhos verdes e pele clara. Sakura foi muitas vezes intimidada devido à sua testa um pouco grande, ganhando assim o apelido de "Testa de Marquise", devido a isso ela usava a franja sobre a testa em uma tentativa de cobri-la, apesar de Ino a incentivar a usar seu cabelo para trás. Em Naruto, Sakura usava um vestido qipao vermelho com desenhos circulares brancos, com ou sem mangas curtas e zíper, shorts verdes escuros apertados, sandálias ninja padrão, e um protetor de testa que ela usou para acentuar o rosto. Nas ilustrações coloridas do mangá, retratam ela usando uma maquiagem simples.</p>
+        </div>
+
+        <div class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#personalidade">Personalidade</a></li>
+                <li><a href="#aparencia">Aparência</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>&copy; 2024 Animepedia. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

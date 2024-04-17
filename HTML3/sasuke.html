@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div>   
+        <div class="logo">
+            <img src="/images/anime.png" width="200"/>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Pesquisar..." />
+                <button type="submit">Buscar</button>
+            </form>
+            <script>
+                document.getElementById("search-form").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    let query = document.getElementById("search-input").value.toLowerCase().trim();
+                    if (query) {
+                        window.location.href = `sasuke.html#${query}`;
+                    }
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2>Animepédia</h2>
+            <ul>
+                <li><a href="animepedia.html">Início</a></li>
+            </ul>
+            <h2>Anime</h2>
+            <ul>
+                <li><a href="naruto.html">Naruto</a></li>
+            </ul>
+        <h2>Autor</h2>
+        <ul>
+            <li><a href="kishimoto.html"> Masaki Kishimoto</a></li>
+        </ul>
+            <h2>Personagens</h2>
+            <ul>    
+                <li><a href="sakura.html">Sakura Haruno</a></li>
+                <li><a href="kakashi.html">Kakashi</a></li>
+                <li><a href="usumaki.html">Naruto Usumaki</a></li>
+             </ul>
+        </div>
+
+        <div class="main">
+            <img src="/images/sasuke.jpeg" class=imagem alt="imagem do sasuke cabelo preto e estiloso olhos pretos">
+            <blockquote>
+                <p>"A vingança é tudo o que eu tenho. E não vou deixar ninguém interferir."</p>
+                <footer>Sasuke Uchiha</footer>
+            </blockquote>
+            
+            <h2><a name="sobre"></a>Sobre</h2>
+            <p>Sasuke Uchiha (うちはサスケ, Uchiha Sasuke) é um dos últimos membros sobreviventes do clã Uchiha de Konohagakure, além de ser a reencarnação atual de Indra. Ele se tornou um shinobi para que pudesse algum dia ficar forte o suficiente para se vingar contra o seu irmão mais velho, Itachi, que tinha massacrado todo o seu clã. Inicialmente, um membro do Time Kakashi de Konoha, Sasuke desertou da aldeia para obter poder com Orochimaru, e mais tarde também se juntou a Akatsuki, tornando-se um criminoso internacional no processo. Mais tarde, ele se torna uma peça fundamental para acabar com a Quarta Guerra Mundial Ninja, até ser finalmente redimido por seu rival, e também melhor amigo, Naruto Uzumaki. Sasuke decide voltar para Konoha, dedicando a sua vida para ajudar a proteger a vila e seus habitantes.</p>
+            <h2><a name="personalidade"></a>Personalidade</h2>
+            <p>Quando criança, Sasuke era muito gentil e amável com sua família e respeitoso com seu clã e professores. Ele tinha muito orgulho de ser filho de Fugaku e irmão de Itachi, tendo um forte desejo de imitá-los, desejando ter a aprovação e reconhecimento de seu pai.[12] Isto mudou após o massacre do clã Uchiha, que acabou transformando Sasuke em um jovem frio, cínico e arrogante, tornando-se um vingador auto-intitulado dedicado a matar Itachi e restaurar o clã Uchiha.[</p>
+            <h2><a name="aparencia"></a>Aparência</h2>
+            <p>Sasuke é um ninja de pele clara que tem olhos ônix e cabelos preto na altura do queixo. Seu cabelo é espetado nas costas com franjas que crescem com o avançar da história. Quando criança, sua franja ficava pendurada acima de seus olhos. Mais tarde, elas passaram a ficar penduradas em ambos os lados de seu rosto enquadrando suas bochechas e depois retornaram novamente ao seu estilo original. Durante sua infância, Sasuke usava uma simples camisa preta de manga comprida com gola alta e o símbolo Uchiha nas costas, além de shorts preto (branco no anime). Sasuke usou o uniforme Anbu uma vez, quando ele se juntou a Itachi em uma missão para capturar um javali.</p>
+            
+        </div>
+
+        <div class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#personalidade">Personalidade</a></li>
+                <li><a href="#aparencia">Aparência</a></li>
+            
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>&copy; 2024 Animepedia. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

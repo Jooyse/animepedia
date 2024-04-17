@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakashi</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div>   
+        <div class="logo">
+            <img src="/images/anime.png" width="200"/>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Pesquisar..." />
+                <button type="submit">Buscar</button>
+            </form>
+            <script>
+                document.getElementById("search-form").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    let query = document.getElementById("search-input").value.toLowerCase().trim();
+                    if (query) {
+                        window.location.href = `${query}.html`;
+                    }
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <div class="sidebar">
+            
+            <h2>Animepédia</h2>
+            <ul>
+                <li><a href="animepedia.html">Início</a></li>
+            </ul>
+            <h2>Anime</h2>
+            <ul>
+                <li><a href="naruto.html">Naruto</a></li>
+            </ul>
+        <h2>Autor</h2>
+        <ul>
+            <li><a href="kishimoto.html"> Masaki Kishimoto</a></li>
+        </ul>
+            <h2>Personagens</h2>
+            <ul>
+                <li><a href="sasuke.html">Sasuke Uchiha </a></li>
+                <li><a href="sakura.html">Sakura Haruno</a></li>
+                <li><a href="usumaki.html">Naruto Usumaki</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="main">
+            
+            <img src="/images/kakashi.jpeg"  alt="imagem do kakashi cabelos platinados">
+            <blockquote>
+                <p>"Aqueles que não entendem o verdadeiro significado de um ninja são os piores." </p>
+                <footer>Hatake Kakashi</footer>
+            </blockquote>
+            <h2><a name="sobre"></a>Sobre</h2>
+            <p>Kakashi Hatake (はたけカカシ, Hatake Kakashi) é um shinobi de Konohagakure. Ele recebeu um Sharingan de seu ex-companheiro de equipe, Obito Uchiha, quando era mais jovem, fazendo-o ser conhecido como Kakashi o Ninja Copiador (コピー忍者のカカシ, Kopī Ninja no Kakashi) e Kakashi do Sharingan (写輪眼のカカシ, Sharingan no Kakashi). Seu prodigioso talento, habilidades e destreza com o Sharingan fizeram dele um dos mais capazes ninjas da aldeia, sendo reconhecido em todo o mundo ninja. Ele acaba sendo nomeado como líder do Time Kakashi, onde ele usa seus anos de experiência para treinar seus alunos para se tornarem ninjas habilidosos de suas próprias maneiras. Logo um tempo após a Quarta Guerra Mundial Shinobi, Kakashi ocupa o cargo público como o Sexto Hokage (六代目火影, Rokudaime Hokage; literalmente significa: "Sexta Sombra do Fogo") antes de eventualmente se aposentar e passá-lo ao seu pupilo Naruto Uzumaki.</p>
+            <h2><a name="personalidade"></a>Personalidade</h2>
+            <p>Kakashi tem uma atitude solitária. Sua atitude calma e isolada tem sido chamada de "legal e da moda" muitas vezes por Might Guy. Apesar de sua reputação e talento ninja crescer cada vez mais, Kakashi não tem mostrado sinais de arrogância, e é bastante modesto sobre suas habilidades, como mostrado quando ele prontamente elogia os outros pelo avanço em suas habilidades de combate e afirmando em mais de uma ocasião que Naruto havia ultrapassado seu poder. Quando ele foi sugerido por muitos para se tornar Hokage, Kakashi admitiu abertamente que era indigno, mas aceitou o cargo por causa do bem-estar da aldeia. Sua atitude calma naturalmente é usada para sua vantagem na batalha, tornando mais fácil para ele manter a compostura e manter o foco sobre a situação em que se encontra, além de observar tudo ao seu redor. Como resultado, ele pode se ajustar rapidamente a qualquer situação para tomar decisões perspicazes e pensadas, permitindo que ele fique passos à frente de seus adversários.</p>
+            <h2><a name="aparencia"></a>Aparência</h2>
+            <p>Kakashi é um shinobi relativamente alto, com cabelo prata, espetado e tem olhos de cor escura. Após sua primeira missão como jounin, ele obteve uma pequena cicatriz vertical, percorrendo sobre seu olho esquerdo (que logo foi substituído por um Sharingan). Apesar de ainda não ter sido revelado, desde a infância, Kakashi tem usado uma máscara sobre a metade inferior do rosto. Revela-se, no entanto, que ele possui uma mandíbula estreitamente delineada, com uma pinta sob o canto esquerdo da boca.[24] Nos poucos casos em que Kakashi é visto sem sua máscara, é visto que ele tem uma linha de mandíbula estreita; nestes casos, as partes de seu rosto normalmente cobertas pela máscara são obstruídas. No anime, é fortemente sugerido que ele é de fato muito bonito, como visto pela reação de Teuchi e Ayame ao verem seu rosto.[25] Ele já foi confundido por Chiyo como sendo seu pai, Sakumo Hatake, a quem ele se parece muito, apesar de seu rosto ser obscurecido.[26] A personalidade de Kakashi é ainda mais enfatizada pela sua expressão geralmente preguiçosa, forma distante, voz descontraída e atitude minimalista. Em situações graves, no entanto, ele é mostrado ter um olhar muito severo e intenso.</p>
+        </div>
+        
+
+        <div class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#personalidade">Personalidade</a></li>
+                <li><a href="#aparencia">Aparência</a></li>
+        
+            </ul>
+        </div>
+
+    <div class="footer">
+        <footer>
+            <p>&copy; 2024 Animepedia. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

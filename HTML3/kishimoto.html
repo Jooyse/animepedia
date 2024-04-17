@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autor kishimoto</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div>   
+        <div class="logo">
+            <img src="/images/anime.png" width="200"/>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Pesquisar..." />
+                <button type="submit">Buscar</button>
+            </form>
+            <script>
+                document.getElementById("search-form").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    let query = document.getElementById("search-input").value.toLowerCase().trim();
+                    if (query) {
+                        window.location.href = `kishimoto.html#${query}`;
+                    }
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2>Animepédia</h2>
+            <ul>
+                <li><a href="animepedia.html">Início</a></li>
+            </ul>
+            <h2>Anime</h2>
+            <ul>
+                <li><a href="naruto.html">Naruto</a></li>
+            </ul>
+        <h2>Autor</h2>
+        <ul>
+            <li><a href="kishimoto.html"> Masaki Kishimoto</a></li>
+        </ul>
+            <h2>Personagens</h2>
+            <ul>
+                <li><a href="sasuke.html">Sasuke Uchiha </a></li>
+                <li><a href="sakura.html">Sakura Haruno</a></li>
+                <li><a href="kakashi.html">Kakashi</a></li>
+                <li><a href="usumaki.html">Naruto Usumaki</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="main">
+            <img src="/images/kishimoto.jpg" alt="imagem do autor kishimoto">
+            <blockquote>
+                <p>"Para mim, o mais importante é acreditar em si mesmo e não desistir, mesmo quando há obstáculos. É isso que eu queria transmitir aos meus leitores com Naruto."</p>
+                <footer>Masashi Kishimoto</footer>
+            </blockquote>
+            <h2><a name="sobre"></a>Sobre</h2>
+            <p>Masashi Kishimoto (岸本斉史, Kishimoto Masashi) nasceu dia 08 de novembro de 1974 na prefeitura de Okayama no Japão, é o criador e autor do popular mangá e anime Naruto. Ele estreou como mangaká com seu trabalho Karakuri, que foi submetido a Shueisha em 1996. A partir de 1999, seu próximo trabalho, Naruto foi serializado na revista semanal Shonen Jump. Kishimoto recebeu o prêmio Hop Step, que é dado a novos artistas uma vez por mês da Shonen Jump. Ele também diz que foi fortemente influenciado pela série Dragon Ball e seu criador, Akira Toriyama.
+
+                Seu irmão gêmeo, Seishi Kishimoto, também é um mangaká e criador de 666 Satan e Drive Blazer. Sua arte tem sido comentada como sendo muito semelhante e várias acusações de plágio foram feitas, ou que Seishi tinha copiado seu irmão, ou vice-versa. No entanto, Seishi observa em um dos volumes de seus mangás que as semelhanças não são intencionais e que a ocorrência teria sido provável, porque tanto ele quanto Masashi foram influenciados por muitas das mesmas coisas. Masashi Kishimoto publicamente rejeitou essas acusações em seu próprio mangá.
+                
+                Em suas entrevistas e exclusivamente no mangá de Naruto, ele normalmente menciona sua planta falecida, "Ukki-kun".[1] De acordo com Kishimoto, a primeira vez que ele teve uma planta no escritório, devido à falta de atmosfera natural, ele se alimentou de alimentos vegetais diluídos. Ele continuou comprando várias outras plantas depois, mas muitas delas morreram.[2]</p>
+           
+            
+        </div>
+
+        <div class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+               
+            
+
+            </ul>
+        </div>
+
+    
+        <div class="footer">
+            <footer>
+                <p>&copy; 2024 Animepedia. Todos os direitos reservados.</p>
+            </footer>
+        </div>
+</body>
+</html>

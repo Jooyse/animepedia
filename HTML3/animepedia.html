@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animepédia</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div>   
+        <div class="logo">
+            <img src="/images/anime.png" width="200"/>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Pesquisar..." />
+                <button type="submit">Buscar</button>
+            </form>
+            <script>
+                document.getElementById("search-form").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    let query = document.getElementById("search-input").value.toLowerCase().trim();
+                    if (query) {
+                        window.location.href = `${query}.html`;
+                    }
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <div class="sidebar">
+            
+            <h2>Animepédia</h2>
+            <ul>
+                <li><a href="animepedia.html">Início</a></li>
+            </ul>
+            <h2>Anime</h2>
+            <ul>
+                <li><a href="naruto.html">Naruto</a></li>
+            </ul>
+        <h2>Autor</h2>
+        <ul>
+            <li><a href="kishimoto.html"> Masaki Kishimoto</a></li>
+        </ul>
+            <h2>Personagens</h2>
+            <ul>
+                <li><a href="sasuke.html">Sasuke Uchiha </a></li>
+                <li><a href="sakura.html">Sakura Haruno</a></li>
+                <li><a href="kakashi.html">Kakashi</a></li>
+                <li><a href="usumaki.html">Naruto Usumaki</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="main">
+            
+            <img src="/images/anime.png" alt="logo animepedia">
+        
+            <h2><a name="animepedia"></a>Animepédia</h2>
+           <p>Sejam Bem vindos ao Animepédia!</p>
+         
+            
+        </div>
+
+        <div class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#animepedia">Animepédia</a></li>
+               
+            
+
+            </ul>
+        </div>
+
+    
+        <div class="footer">
+            <footer>
+                <p>&copy; 2024 Animepedia. Todos os direitos reservados.</p>
+            </footer>
+        </div>
+</body>
+</html>
